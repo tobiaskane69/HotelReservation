@@ -43,29 +43,32 @@
             // 
             // button_viewroom
             // 
-            button_viewroom.Location = new Point(137, 113);
+            button_viewroom.Location = new Point(157, 151);
+            button_viewroom.Margin = new Padding(3, 4, 3, 4);
             button_viewroom.Name = "button_viewroom";
-            button_viewroom.Size = new Size(156, 33);
+            button_viewroom.Size = new Size(178, 44);
             button_viewroom.TabIndex = 0;
             button_viewroom.Text = "View Rooms";
             button_viewroom.UseVisualStyleBackColor = true;
+            button_viewroom.Click += button_viewroom_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(111, 18);
+            label1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(127, 24);
             label1.Name = "label1";
-            label1.Size = new Size(207, 28);
+            label1.Size = new Size(238, 36);
             label1.TabIndex = 1;
             label1.Text = "Hotel Dashboard";
             // 
             // button_logout
             // 
             button_logout.BackColor = Color.Transparent;
-            button_logout.Location = new Point(345, 3);
+            button_logout.Location = new Point(394, 4);
+            button_logout.Margin = new Padding(3, 4, 3, 4);
             button_logout.Name = "button_logout";
-            button_logout.Size = new Size(81, 30);
+            button_logout.Size = new Size(93, 40);
             button_logout.TabIndex = 2;
             button_logout.Text = "Logout";
             button_logout.UseVisualStyleBackColor = false;
@@ -73,51 +76,57 @@
             // 
             // button_viewcustomers
             // 
-            button_viewcustomers.Location = new Point(137, 161);
+            button_viewcustomers.Location = new Point(157, 215);
+            button_viewcustomers.Margin = new Padding(3, 4, 3, 4);
             button_viewcustomers.Name = "button_viewcustomers";
-            button_viewcustomers.Size = new Size(156, 33);
+            button_viewcustomers.Size = new Size(178, 44);
             button_viewcustomers.TabIndex = 4;
-            button_viewcustomers.Text = "View Customers";
+            button_viewcustomers.Text = "Add New Guests";
             button_viewcustomers.UseVisualStyleBackColor = true;
+            button_viewcustomers.Click += button_viewcustomers_Click;
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaption;
             panel1.Controls.Add(label1);
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(429, 62);
+            panel1.Size = new Size(490, 83);
             panel1.TabIndex = 5;
             // 
             // panel2
             // 
             panel2.BackColor = SystemColors.ActiveCaption;
             panel2.Controls.Add(button_logout);
-            panel2.Location = new Point(0, 265);
+            panel2.Location = new Point(0, 353);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(429, 38);
+            panel2.Size = new Size(490, 51);
             panel2.TabIndex = 6;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 113);
+            pictureBox1.Location = new Point(14, 151);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 81);
+            pictureBox1.Size = new Size(114, 108);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
             // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(428, 301);
+            ClientSize = new Size(489, 401);
             Controls.Add(pictureBox1);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(button_viewcustomers);
             Controls.Add(button_viewroom);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Dashboard";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

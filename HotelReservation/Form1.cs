@@ -19,7 +19,7 @@ namespace HotelReservation
             if (txt_username.Text == username && txt_password.Text == password)
             {
                 // Successful login
-                MessageBox.Show("Login successful!");
+                MessageBox.Show("Login Successful!");
 
                 this.Hide();
                 Dashboard dashboard = new Dashboard();
@@ -27,8 +27,8 @@ namespace HotelReservation
             }
             else
             {
-                // Incorrect login credentials
-                MessageBox.Show("Incorrect login credentials.");
+                // Incorrect Login credentials
+                MessageBox.Show("Incorrect Login Credentials.");
             }
         }
 
@@ -37,5 +37,9 @@ namespace HotelReservation
             Application.Exit();
         }
 
+        private void txt_password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

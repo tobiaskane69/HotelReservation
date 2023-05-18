@@ -91,10 +91,11 @@
             txt_password.PasswordChar = '*';
             txt_password.Size = new Size(271, 23);
             txt_password.TabIndex = 4;
+            txt_password.TextChanged += txt_password_TextChanged;
             // 
             // button_login
             // 
-            button_login.BackColor = SystemColors.MenuHighlight;
+            button_login.BackColor = Color.CornflowerBlue;
             button_login.Location = new Point(241, 258);
             button_login.Name = "button_login";
             button_login.Size = new Size(75, 31);
@@ -105,7 +106,7 @@
             // 
             // button_exit
             // 
-            button_exit.BackColor = SystemColors.MenuHighlight;
+            button_exit.BackColor = Color.CornflowerBlue;
             button_exit.Location = new Point(160, 258);
             button_exit.Name = "button_exit";
             button_exit.Size = new Size(75, 32);
@@ -117,11 +118,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ControlText;
             label4.Location = new Point(72, 20);
             label4.Name = "label4";
-            label4.Size = new Size(221, 22);
+            label4.Size = new Size(216, 22);
             label4.TabIndex = 8;
             label4.Text = "HOTEL RESERVATION";
             // 

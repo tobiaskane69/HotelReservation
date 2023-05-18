@@ -23,5 +23,19 @@ namespace HotelReservation
             Form1 form1 = new Form1();
             form1.ShowDialog();
         }
+
+        private void button_viewcustomers_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CostumerInfo costumerInfo = new CostumerInfo();
+            costumerInfo.ShowDialog();
+        }
+
+        private void button_viewroom_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewRooms viewRooms = new ViewRooms();
+            viewRooms.ShowDialog();
+        }
     }
 }
